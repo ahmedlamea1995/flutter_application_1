@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-class custumbotton extends StatelessWidget {
+class custumbotton2 extends StatelessWidget {
 
   final Color backgroundColor;
   final EdgeInsets padding;
@@ -10,7 +10,11 @@ class custumbotton extends StatelessWidget {
   final Widget Icon;
   final String text;
   final TextStyle textstyle;
-  const custumbotton({super.key,  required this.backgroundColor, required this.padding, required this.borderRadius,  required this.Icon, required this.text, required this.textstyle});
+  final Color bordercolor;
+  final double borderwidth;
+
+
+  const custumbotton2({super.key,  required this.backgroundColor, required this.padding, required this.borderRadius,  required this.Icon, required this.text, required this.textstyle, required this.borderwidth, required this.bordercolor});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +22,7 @@ class custumbotton extends StatelessWidget {
       padding: padding,
 
       decoration: BoxDecoration(
-        border: Border.all(),
+        border: Border.all(color: bordercolor,width: borderwidth),
         color: backgroundColor, // Fill color
         borderRadius: BorderRadius.circular(borderRadius),
         // Rounded corners

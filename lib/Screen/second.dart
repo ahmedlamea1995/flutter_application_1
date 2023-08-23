@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Screen/addpayment.dart';
+import 'package:flutter_application_1/Screen/nine.dart';
 import 'package:flutter_application_1/Screen/third.dart';
 
 import '../widjet/custumbuttun.dart';
@@ -516,7 +518,9 @@ class _secondState extends State<second> {
                     Expanded(
                         flex: 1,
                         child: IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+
+                          },
                           icon: Icon(
                             Icons.payment,
                             color: Colors.orange,
@@ -526,21 +530,33 @@ class _secondState extends State<second> {
                 ),
               ),
             ),
-            const InkWell(
-              child: Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Row(
-                  children: [
-                    Expanded(
-                        child: custumbotton(
-                      backgroundColor: Colors.orange,
-                      padding: EdgeInsets.all(5),
-                      borderRadius: 8,
-                      Icon: Icon(Icons.local_taxi_sharp),
-                      text: 'احجز',
-                      textstyle: TextStyle(),
-                    )),
-                  ],
+
+             InkWell(
+              onTap:(){
+
+              },
+              child: InkWell(
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => nine()),
+                  );
+                },
+                child: Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                          child: custumbotton(
+                        backgroundColor: Colors.orange,
+                        padding: EdgeInsets.all(5),
+                        borderRadius: 8,
+                        Icon: Icon(Icons.local_taxi_sharp),
+                        text: 'احجز',
+                        textstyle: TextStyle(),
+                      )),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -606,7 +622,12 @@ class _secondState extends State<second> {
                     Expanded(
                         flex: 1,
                         child: IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => addpayment()),
+                              );
+                            },
                             icon: Icon(
                               Icons.arrow_back_ios,
                               size: 12,
