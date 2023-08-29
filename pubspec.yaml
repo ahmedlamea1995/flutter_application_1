@@ -76,6 +76,12 @@ flutter:
     - image/icon _Money Bill.png
     - image/car.gif
     - image/clip.png
+    - image/taxicar.png
+    - image/hotel.png
+    - image/openmoji_taxi.png
+    - image/seven.png
+    - image/Vector.png
+    - image/fa_road.png
 
    
 

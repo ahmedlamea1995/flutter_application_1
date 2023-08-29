@@ -9,6 +9,8 @@ import 'Screen/eight.dart';
 import 'Screen/eleven.dart';
 import 'Screen/firstscreen.dart';
 import 'Screen/four.dart';
+import 'Screen/homepage.dart';
+import 'Screen/hometaxi.dart';
 import 'Screen/nine.dart';
 import 'Screen/second.dart';
 
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: second(),
+      home: hometaxi(),
     );
   }
 }
